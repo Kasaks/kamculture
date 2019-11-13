@@ -1,0 +1,114 @@
+.slider-section {
+  background: #000; }
+  .slider-section .viewport {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .slider-section .viewport .slide-block {
+      height: 100%; }
+      .slider-section .viewport .slide-block .slide {
+        height: 100%;
+        display: none;
+        -webkit-transition: display .3s;
+        -o-transition: display .3s;
+        transition: display .3s; }
+        .slider-section .viewport .slide-block .slide a {
+          width: 100%; }
+          .slider-section .viewport .slide-block .slide a .slide-img-block {
+            background-position: 100% 50%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%; }
+          .slider-section .viewport .slide-block .slide a .slide-gradient-block {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: -webkit-gradient(linear, left top, right top, from(black), color-stop(30%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+            background: -webkit-linear-gradient(left, black, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(left, black, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0));
+            background: linear-gradient(to right, black, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0)); }
+          .slider-section .viewport .slide-block .slide a .slide-text-block {
+            position: absolute;
+            bottom: 150px;
+            color: #fff;
+            padding: 0 20px;
+            text-align: center;
+            width: 30%; }
+            .slider-section .viewport .slide-block .slide a .slide-text-block .slide-title {
+              font-size: 20px;
+              margin-bottom: 10px; }
+            .slider-section .viewport .slide-block .slide a .slide-text-block .slide-discription {
+              font-size: 16px;
+              color: #ccc; }
+      .slider-section .viewport .slide-block .active-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .slider-section .viewport .button-block {
+      position: absolute;
+      width: 30%;
+      bottom: 50px;
+      color: #ccc; }
+      .slider-section .viewport .button-block .prev-btn, .slider-section .viewport .button-block .next-btn {
+        font-size: 24px;
+        cursor: pointer;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
+        transition: color .3s; }
+      .slider-section .viewport .button-block .prev-btn {
+        margin-right: 20px; }
+      .slider-section .viewport .button-block .next-btn {
+        margin-left: 30px; }
+      .slider-section .viewport .button-block .prev-btn:hover, .slider-section .viewport .button-block .next-btn:hover {
+        color: #fff; }
+      .slider-section .viewport .button-block .circle-btn {
+        padding: 5px;
+        border-radius: 50%;
+        margin-left: 10px;
+        background: #ccc;
+        cursor: pointer;
+        -webkit-transition: background .3s;
+        -o-transition: background .3s;
+        transition: background .3s; }
+      .slider-section .viewport .button-block .circle-btn:hover {
+        background: #fff; }
+      .slider-section .viewport .button-block .active-circle-btn {
+        background: #C41E3D; }
+
+@media (max-width: 1024px) {
+  .slider-section .viewport {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .slider-section .viewport .slide-block .slide a .slide-gradient-block {
+      background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(30%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+      background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0));
+      background: -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0));
+      background: linear-gradient(to top, black, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0)); }
+    .slider-section .viewport .slide-block .slide a .slide-text-block {
+      bottom: 50px;
+      width: 100%; }
+    .slider-section .viewport .button-block {
+      width: 100%;
+      bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .slider-section .viewport .button-block {
+    width: 100%;
+    bottom: 20px; }
+    .slider-section .viewport .button-block .prev-btn, .slider-section .viewport .button-block .next-btn {
+      display: none; } }
